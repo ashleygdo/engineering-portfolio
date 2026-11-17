@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PRISM / PULSE | Engineering Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="prism-page">
+
+    <main class="prism-container">
+
+        <!-- PROJECT INTRODUCTION -->
+
+        <header class="prism-intro">
+
+            <div class="prism-topline">
+                <span>SPACE CITY ROCKETRY</span>
+                <span>ONGOING PROJECT</span>
+            </div>
+
+            <h1>PRISM / PULSE</h1>
+
+            <p class="prism-description">
+                Investigating biomedical signal
+                integrity and autonomous fault
+                management in rocket flight.
+            </p>
+
+        </header>
+
+
+        <!-- ACRONYM DEFINITIONS -->
+
+        <section class="prism-definitions">
+
+            <div class="prism-definition">
+                <h2>PRISM</h2>
+                <p>
+                    PULSE-enabled Research in
+                    Instrumentation and Signal Monitoring
+                </p>
+            </div>
+
+            <div class="prism-definition">
+                <h2>PULSE</h2>
+                <p>
+                    Predictive Uncertainty and
+                    Loss-of-Signal Evaluation
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT FACTS -->
+
+        <section class="prism-details">
+
+            <div>
+                <h3>ROLE</h3>
+                <p>Payload Co-Lead</p>
+            </div>
+
+            <div>
+                <h3>PLATFORM</h3>
+                <p>Student Rocket</p>
+            </div>
+
+            <div>
+                <h3>STATUS</h3>
+                <p>In Development</p>
+            </div>
+
+        </section>
+
+
+        <!-- THE MISSION -->
+
+        <section class="prism-mission">
+
+            <h2>The Mission</h2>
+
+            <p>
+                PRISM uses a synthetic ECG reference
+                and physical phantom to investigate
+                signal integrity during rocket flight.
+                PULSE evaluates signal abnormalities
+                and supports autonomous fault response
+                using onboard measurements.
+            </p>
+
+            <div class="prism-image-card">
+
+                <div class="prism-image-placeholder">
+                    <span>Payload Architecture Diagram</span>
+                    <small>Image Placeholder</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+<!-- MY ROLE & CONTRIBUTIONS -->
+
+<section class="pulse-contributions">
+
+    <p class="pulse-section-label">
+        INDIVIDUAL ENGINEERING CONTRIBUTIONS
+    </p>
+
+    <h2>My Role: PULSE Development Lead</h2>
+
+    <p class="pulse-role-description">
+        As Payload Co-Lead for Space City Rocketry,
+        I am responsible for leading the technical
+        development of PULSE, the autonomous
+        fault-detection, isolation, and recovery
+        (FDIR) subsystem integrated into PRISM.
+
+        My responsibilities encompass PULSE system
+        architecture, software development,
+        fault-management algorithms, hardware
+        interfaces, and verification planning.
+    </p>
+
+    <div class="pulse-contributions-grid">
+
+        <div class="pulse-contribution-card">
+            <h3>System Architecture</h3>
+            <p>
+                Designing PULSE's autonomous
+                processing architecture and
+                subsystem interfaces.
+            </p>
+        </div>
+
+        <div class="pulse-contribution-card">
+            <h3>FDIR Development</h3>
+            <p>
+                Developing fault detection,
+                classification, confidence
+                evaluation, and recovery logic.
+            </p>
+        </div>
+
+        <div class="pulse-contribution-card">
+            <h3>Software & Testing</h3>
+            <p>
+                Building Python prototypes and
+                evaluating fault-management
+                behavior using simulated ECG
+                signal faults.
+            </p>
+        </div>
+
+        <div class="pulse-contribution-card">
+            <h3>Hardware Integration</h3>
+            <p>
+                Defining interfaces between the
+                onboard controller, ECG acquisition,
+                environmental sensors, and
+                local data logging.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PULSE SYSTEM ARCHITECTURE -->
+
+<section class="pulse-architecture">
+
+    <p class="pulse-section-label">
+        AUTONOMOUS SYSTEM DESIGN
+    </p>
+
+    <h2>PULSE System Architecture</h2>
+
+    <p class="pulse-architecture-intro">
+        PULSE is being developed as a self-contained,
+        environment-aware fault detection, isolation,
+        and recovery system. Its architecture combines
+        continuous ECG acquisition, environmental
+        measurements, onboard processing, autonomous
+        fault response, and local data logging.
+    </p>
+
+    <div class="pulse-architecture-panel">
+
+        <h3>Conceptual Signal Flow</h3>
+
+        <div class="pulse-flow-grid">
+
+            <div class="pulse-flow-item">
+                <span>01</span>
+                <h4>ECG Acquisition</h4>
+                <p>ADS1292R dual-channel measurements</p>
+            </div>
+
+            <div class="pulse-flow-item">
+                <span>02</span>
+                <h4>Environmental Inputs</h4>
+                <p>Acceleration and temperature sensing</p>
+            </div>
+
+            <div class="pulse-flow-item">
+                <span>03</span>
+                <h4>PULSE Processing</h4>
+                <p>Teensy 4.1 and autonomous FDIR logic</p>
+            </div>
+
+            <div class="pulse-flow-item">
+                <span>04</span>
+                <h4>Response & Logging</h4>
+                <p>Fault actions and local MicroSD records</p>
+            </div>
+
+        </div>
+
+        <p class="pulse-flow-note">
+            ECG and environmental measurements
+            provide inputs to PULSE processing.
+            Fault decisions and supporting data
+            are recorded locally for postflight analysis.
+        </p>
+
+    </div>
+
+    <div class="pulse-diagram-card">
+
+        <div class="pulse-diagram-placeholder">
+            <span>Detailed PULSE Architecture Diagram</span>
+            <small>Image Placeholder</small>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PULSE AUTONOMOUS FDIR DEVELOPMENT -->
+
+<section class="pulse-fdir">
+
+    <p class="pulse-section-label">
+        AUTONOMOUS FAULT MANAGEMENT
+    </p>
+
+    <h2>PULSE FDIR Development</h2>
+
+    <p class="pulse-fdir-intro">
+        I am developing PULSE's autonomous Fault
+        Detection, Isolation, and Recovery (FDIR)
+        algorithms using Python-based prototypes.
+
+        The system is designed to identify ECG
+        signal abnormalities, evaluate fault
+        classification confidence, and support
+        onboard response decisions.
+    </p>
+
+
+<div class="pulse-fault-panel">
+
+    <h3>Fault Scenarios Under Evaluation</h3>
+
+    <div class="pulse-fault-grid">
+
+        <!-- MISSING SAMPLES -->
+        <div class="pulse-fault-card">
+            <h4>Missing Samples</h4>
+            <p>
+                Evaluating detection of interruptions
+                or gaps in ECG sample sequences.
+            </p>
+
+            <div class="pulse-fault-image">
+                <span>Missing Samples</span>
+                <small>Python Plot Placeholder</small>
+            </div>
+        </div>
+
+        <!-- SIGNAL CLIPPING -->
+        <div class="pulse-fault-card">
+            <h4>Signal Clipping</h4>
+            <p>
+                Investigating signal saturation
+                and loss of waveform information.
+            </p>
+
+            <div class="pulse-fault-image">
+                <span>Signal Clipping</span>
+                <small>Python Plot Placeholder</small>
+            </div>
+        </div>
+
+        <!-- FLATLINE -->
+        <div class="pulse-fault-card">
+            <h4>Flatline</h4>
+            <p>
+                Evaluating detection of prolonged
+                constant-value signal behavior.
+            </p>
+
+            <div class="pulse-fault-image">
+                <span>Flatline</span>
+                <small>Python Plot Placeholder</small>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<h3 class="pulse-workflow-title">
+    Development Workflow
+</h3>
+<div class="pulse-workflow-grid">
+
+    <div class="pulse-workflow-step">
+        <span>01</span>
+        <h4>Reference Signal</h4>
+        <p>
+            Generate healthy synthetic ECG data
+            to establish baseline behavior.
+        </p>
+    </div>
+
+    <div class="pulse-workflow-arrow" aria-hidden="true">
+        &rarr;
+    </div>
+
+    <div class="pulse-workflow-step">
+        <span>02</span>
+        <h4>Fault Injection</h4>
+        <p>
+            Introduce controlled abnormalities
+            into reference signals.
+        </p>
+    </div>
+
+    <div class="pulse-workflow-arrow" aria-hidden="true">
+        &rarr;
+    </div>
+
+    <div class="pulse-workflow-step">
+        <span>03</span>
+        <h4>FDIR Evaluation</h4>
+        <p>
+            Evaluate fault detection and
+            classification behavior.
+        </p>
+    </div>
+
+    <div class="pulse-workflow-arrow" aria-hidden="true">
+        &rarr;
+    </div>
+
+    <div class="pulse-workflow-step">
+        <span>04</span>
+        <h4>Algorithm Refinement</h4>
+        <p>
+            Review results and improve
+            fault-management logic.
+        </p>
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PULSE HARDWARE ARCHITECTURE -->
+
+<section class="pulse-hardware">
+
+    <p class="pulse-section-label">
+        EMBEDDED SYSTEM DEVELOPMENT
+    </p>
+
+    <h2>PULSE Hardware Architecture</h2>
+
+    <p class="pulse-hardware-intro">
+        PULSE's planned hardware architecture combines
+        onboard processing, continuous ECG acquisition,
+        environmental sensing, and independent data
+        logging to support autonomous fault management.
+    </p>
+
+    <!-- COMPONENT MATRIX -->
+
+    <div class="pulse-component-panel">
+
+        <div class="pulse-component-heading">
+            <h3>Subsystem Component Matrix</h3>
+            <span>DESIGN BASELINE</span>
+        </div>
+
+        <div class="pulse-table-scroll">
+            <table class="pulse-component-table">
+
+                <thead>
+                    <tr>
+                        <th>Component</th>
+                        <th>Subsystem</th>
+                        <th>Engineering Function</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Teensy 4.1</td>
+                        <td>Processing</td>
+                        <td>
+                            FDIR execution, acquisition
+                            coordination, and logging
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ADS1292R</td>
+                        <td>ECG Acquisition</td>
+                        <td>
+                            Continuous dual-channel
+                            ECG measurement
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ADXL375</td>
+                        <td>Environmental Sensing</td>
+                        <td>
+                            High-g acceleration
+                            measurements
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DS18B20</td>
+                        <td>Environmental Sensing</td>
+                        <td>
+                            Temperature monitoring
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>MicroSD</td>
+                        <td>Data Storage</td>
+                        <td>
+                            Independent onboard
+                            data recording
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Power Regulation</td>
+                        <td>Electrical</td>
+                        <td>
+                            Regulated power supply
+                            for onboard electronics
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+
+    <!-- ENGINEERING CONSIDERATIONS -->
+
+    <div class="pulse-engineering-grid">
+
+        <article class="pulse-engineering-card">
+            <h3>Integration Considerations</h3>
+
+            <p>
+                Electrical interfaces, sampling
+                coordination, power distribution,
+                and independent subsystem operation.
+            </p>
+        </article>
+
+        <article class="pulse-engineering-card">
+            <h3>Verification Priorities</h3>
+
+            <p>
+                Signal acquisition, sensor
+                synchronization, logging reliability,
+                and autonomous fault-response testing.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT PROGRESS & MILESTONES -->
+
+<section class="pulse-milestones">
+
+    <p class="pulse-section-label">
+        DEVELOPMENT ROADMAP
+    </p>
+
+    <h2>Project Progress & Milestones</h2>
+
+    <p class="pulse-milestones-intro">
+        PULSE is progressing through an iterative
+        engineering development process, from
+        preliminary system design and Python
+        prototyping toward embedded integration,
+        ground verification, and flight evaluation.
+    </p>
+
+
+<!-- PULSE DEVELOPMENT PROGRESS -->
+
+<div class="pulse-progress">
+
+    <div class="pulse-progress-heading">
+        <h3>PULSE Development Progress</h3>
+        <span>IN DEVELOPMENT</span>
+    </div>
+
+    <div class="pulse-progress-track">
+        <div class="pulse-progress-fill"></div>
+    </div>
+
+    <p>
+        Current focus: Python FDIR refinement
+        and preparation for embedded hardware
+        integration.
+    </p>
+
+</div>
+
+
+    <div class="pulse-timeline">
+
+        <!-- MILESTONE 1 -->
+        <div class="pulse-milestone completed">
+            <div class="pulse-milestone-content">
+                <span>INITIAL BASELINE COMPLETE</span>
+                <h3>System Architecture & Design</h3>
+                <p>
+                    Defined the preliminary PULSE
+                    architecture, fault scenarios,
+                    and subsystem interfaces.
+                </p>
+            </div>
+        </div>
+
+        <!-- MILESTONE 2 -->
+        <div class="pulse-milestone active">
+            <div class="pulse-milestone-content">
+                <span>PROTOTYPE DEVELOPED · REFINEMENT ONGOING</span>
+                <h3>Python FDIR Prototyping</h3>
+                <p>
+                    Developed initial Python
+                    fault-detection prototypes
+                    using controlled synthetic
+                    ECG signal scenarios.
+                </p>
+            </div>
+        </div>
+
+        <!-- MILESTONE 3 -->
+        <div class="pulse-milestone upcoming">
+            <div class="pulse-milestone-content">
+                <span>PLANNED</span>
+                <h3>Embedded Hardware Integration</h3>
+                <p>
+                    Integrate onboard processing,
+                    ECG acquisition, environmental
+                    sensors, and independent logging.
+                </p>
+            </div>
+        </div>
+
+        <!-- MILESTONE 4 -->
+        <div class="pulse-milestone upcoming">
+            <div class="pulse-milestone-content">
+                <span>PLANNED</span>
+                <h3>Ground Verification</h3>
+                <p>
+                    Evaluate signal acquisition,
+                    fault response, logging
+                    reliability, and integrated
+                    system behavior.
+                </p>
+            </div>
+        </div>
+
+        <!-- MILESTONE 5 -->
+        <div class="pulse-milestone upcoming">
+            <div class="pulse-milestone-content">
+                <span>UPCOMING</span>
+                <h3>Flight Evaluation & Competition</h3>
+                <p>
+                    Collect flight data and compare
+                    onboard PULSE performance
+                    against ground-test results.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT PHOTO GALLERY -->
+
+<section class="pulse-gallery">
+
+    <p class="pulse-section-label">
+        BEHIND THE ENGINEERING
+    </p>
+
+    <h2>Project Gallery</h2>
+
+    <div class="pulse-gallery-container">
+
+        <!-- PHOTO 1: PDR -->
+        <div class="pulse-gallery-slide active-slide">
+
+            <div class="pulse-gallery-placeholder">
+                <span>PDR Photo Placeholder</span>
+            </div>
+
+            <p class="pulse-gallery-caption">
+                Preliminary Design Review (PDR)
+            </p>
+
+        </div>
+
+        <!-- PHOTO 2: FUTURE PHOTO -->
+        <div class="pulse-gallery-slide">
+
+            <div class="pulse-gallery-placeholder">
+                <span>Photo Placeholder</span>
+            </div>
+
+            <p class="pulse-gallery-caption"></p>
+
+        </div>
+
+        <!-- GALLERY CONTROLS -->
+        <div class="pulse-gallery-controls">
+
+            <button class="gallery-prev"
+                    type="button"
+                    aria-label="Previous photo">
+                &#10094;
+            </button>
+
+            <span class="pulse-gallery-counter">
+                1 / 2
+            </span>
+
+            <button class="gallery-next"
+                    type="button"
+                    aria-label="Next photo">
+                &#10095;
+            </button>
+
+        </div>
+
+        <!-- NAVIGATION DOTS -->
+        <div class="pulse-gallery-dots">
+            <button class="gallery-dot active-dot"
+                    type="button"
+                    aria-label="Show photo 1"></button>
+
+            <button class="gallery-dot"
+                    type="button"
+                    aria-label="Show photo 2"></button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECT PAGE FOOTER -->
+
+<section class="pulse-page-footer">
+
+    <p class="pulse-section-label">
+        CONTINUE EXPLORING
+    </p>
+
+    <h2>Explore More of My Work</h2>
+
+    <p>
+        Discover other engineering projects,
+        research, and experiences.
+    </p>
+
+    <div class="pulse-footer-links">
+
+        <a href="projects.html" class="pulse-footer-primary">
+            View All Projects
+        </a>
+
+        <a href="index.html" class="pulse-footer-secondary">
+            Back to Home
+        </a>
+
+    </div>
+
+</section>
+
+
+
+    </main>
+
+
+<script>
+
+const slides = document.querySelectorAll(
+    ".pulse-gallery-slide"
+);
+
+const dots = document.querySelectorAll(
+    ".gallery-dot"
+);
+
+const counter = document.querySelector(
+    ".pulse-gallery-counter"
+);
+
+let currentSlide = 0;
+
+function showSlide(index) {
+
+    currentSlide = (index + slides.length) % slides.length;
+
+    slides.forEach(slide => {
+        slide.classList.remove("active-slide");
+    });
+
+    dots.forEach(dot => {
+        dot.classList.remove("active-dot");
+    });
+
+    slides[currentSlide].classList.add("active-slide");
+    dots[currentSlide].classList.add("active-dot");
+
+    counter.textContent =
+        `${currentSlide + 1} / ${slides.length}`;
+}
+
+document.querySelector(".gallery-next")
+    .addEventListener("click", () => {
+        showSlide(currentSlide + 1);
+    });
+
+document.querySelector(".gallery-prev")
+    .addEventListener("click", () => {
+        showSlide(currentSlide - 1);
+    });
+
+dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+        showSlide(index);
+    });
+});
+
+/* Automatically rotate every 5 seconds */
+
+setInterval(() => {
+    showSlide(currentSlide + 1);
+}, 5000);
+
+</script>
+
+
+</body>
+</html>
