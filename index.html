@@ -7,7 +7,7 @@
 
     <title>Ashley Guajardo | Engineering Portfolio</title>
 
-    <link rel="stylesheet" href="style.css?v=2">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
+            <a href="index.html#featured-projects">Projects</a>
             <a href="notebook.html">Notebook</a>
             <a href="mentorship.html">Mentorship</a>
             <a href="resume.html">Résumé</a>
@@ -28,58 +28,69 @@
         </div>
 
     </nav>
-  
-<!-- HERO SECTION -->
 
-<section class="hero">
 
-    <div class="hero-content">
+    <!-- HERO SECTION -->
 
-        <!-- LEFT SIDE: INTRODUCTION -->
+    <section class="hero">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
-            <p class="eyebrow">
-                AEROSPACE ENGINEERING · ROBOTICS · RESEARCH
-            </p>
+            <!-- LEFT SIDE: INTRODUCTION -->
 
-            <h1>Hi, I'm Ashley.</h1>
+            <div class="hero-text">
 
-            <h2>
-                Engineering systems for exploration
-                and discovery.
-            </h2>
+                <p class="eyebrow">
+                    AEROSPACE ENGINEERING · ROBOTICS · RESEARCH
+                </p>
 
-            <p class="intro">
-                I'm a Mechanical Engineering graduate student
-                at the University of Houston with a background
-                in Aerospace Engineering.
+                <!-- NAME AND ANIMATED ROBOT -->
 
-                My interests include planetary robotics,
-                spacecraft systems, autonomous technologies,
-                and STEM mentorship.
-            </p>
+                <h1 class="hero-name">
+                    Hi, I'm Ashley.
+                    <img
+                        src="images/pixor-library-sci-robot-small.gif"
+                        alt="Animated pixel-art robot"
+                        class="hero-robot"
+                    >
+                </h1>
+
+                <h2>
+                    Engineering systems for exploration
+                    and discovery.
+                </h2>
+
+                <p class="intro">
+                    I'm a Mechanical Engineering graduate student
+                    at the University of Houston with a background
+                    in Aerospace Engineering.
+
+                    My interests include planetary robotics,
+                    spacecraft systems, autonomous technologies,
+                    and STEM mentorship.
+                </p>
+
+            </div>
+
+            <!-- RIGHT SIDE: PROFILE PHOTO -->
+
+            <div class="hero-photo">
+
+                <img
+                    src="images/profile.jpg"
+                    alt="Portrait of Ashley"
+                >
+
+            </div>
 
         </div>
 
-        <!-- RIGHT SIDE: PROFILE PHOTO -->
+    </section>
 
-        <div class="hero-photo">
-
-            <img
-                src="images/profile.jpg"
-                alt="Portrait of Ashley"
-            >
-
-        </div>
-
-    </div>
-
-</section>
 
     <!-- FEATURED PROJECTS SECTION -->
 
-    <section class="projects">
+    <section class="projects" id="featured-projects">
 
         <h2>Featured Projects</h2>
 
@@ -88,11 +99,9 @@
             planetary robotics, and autonomous systems.
         </p>
 
-
         <!-- PROJECT GRID -->
 
         <div class="project-grid">
-
 
             <!-- PROJECT 1: LUNAR ROVER -->
 
@@ -107,18 +116,14 @@
                 </p>
 
                 <div class="project-tags">
-
                     <span>Mechanical Design</span>
                     <span>Onshape CAD</span>
                     <span>Origami Mechanisms</span>
-
                 </div>
-
 
                 <a href="lunar-rover.html" class="project-link">
                     View Project &rarr;
                 </a>
-
 
             </div>
 
@@ -136,12 +141,10 @@
                 </p>
 
                 <div class="project-tags">
-
                     <span>Python</span>
                     <span>Autonomous Systems</span>
                     <span>FDIR</span>
                     <span>Embedded Systems</span>
-
                 </div>
 
                 <a href="prism-pulse.html" class="project-link">
@@ -151,37 +154,65 @@
             </div>
 
 
-            <!-- PROJECT 3: ASCEND -->
+            
+<!--
+    ASCEND PROJECT — TEMPORARILY HIDDEN
+    Restore when project documentation is ready.
 
-            <div class="project-card">
+    <div class="project-card">
 
-                 <h3>ASCEND | Autonomous ATV Controls</h3>
+        <h3>ASCEND | Autonomous ATV Controls</h3>
 
-                <p>
-                    Developing an electronic throttle control
-                    system integrating a Pixhawk flight controller,
-                    PWM signal conversion, and a motor controller
-                    for autonomous ATV operation.
-                </p>
+        <p>
+            Developing an electronic throttle control
+            system integrating a Pixhawk flight controller,
+            PWM signal conversion, and a motor controller
+            for autonomous ATV operation.
+        </p>
 
-    <div class="project-tags">
+        <div class="project-tags">
+            <span>Control Systems</span>
+            <span>Pixhawk</span>
+            <span>Electronics Integration</span>
+            <span>Autonomous Vehicles</span>
+        </div>
 
-        <span>Control Systems</span>
-        <span>Pixhawk</span>
-        <span>Electronics Integration</span>
-        <span>Autonomous Vehicles</span>
+        <a href="ascend.html" class="project-link">
+            View Project &rarr;
+        </a>
 
     </div>
 
-    <a href="ascend.html" class="project-link">
-        View Project &rarr;
-    </a>
+    END HIDDEN ASCEND PROJECT
+-->
 
-</div>
 
+
+            <!-- PROJECT 4: BLUE ORIGIN -->
+
+            <div class="project-card">
+
+                <h3>Blue Origin | Lunar Lander PRV</h3>
+
+                <p>
+                    Blue Origin-sponsored aerospace engineering
+                    senior design project focused on pressure
+                    relief valve selection, fluid-system analysis,
+                    and experimental testing.
+                </p>
+
+                <div class="project-tags">
+                    <span>Fluid Systems</span>
+                    <span>Valve Selection</span>
+                    <span>Engineering Trade Studies</span>
+                    <span>Experimental Testing</span>
+                </div>
+
+                <a href="blue-origin.html" class="project-link">
+                    View Project &rarr;
+                </a>
 
             </div>
-
 
         </div>
         <!-- END PROJECT GRID -->
@@ -189,173 +220,167 @@
     </section>
     <!-- END FEATURED PROJECTS -->
 
+<template id="future-home-gallery">
 
-<!-- HOMEPAGE PHOTO GALLERY -->
+    <!-- HOMEPAGE PHOTO GALLERY -->
 
-<section class="home-gallery">
+    <section class="home-gallery">
 
-    <p class="home-gallery-label">
-        A GLIMPSE INTO MY JOURNEY
-    </p>
+        <p class="home-gallery-label">
+            A GLIMPSE INTO MY JOURNEY
+        </p>
 
-    <h2>Beyond the Engineering</h2>
+        <h2>Beyond the Engineering</h2>
 
-    <p class="home-gallery-intro">
-        From engineering projects and research
-        to STEM mentorship, outreach, and the
-        experiences that have shaped my journey.
-    </p>
+        <p class="home-gallery-intro">
+            From engineering projects and research
+            to STEM mentorship, outreach, and the
+            experiences that have shaped my journey.
+        </p>
 
-    <div class="home-gallery-container">
+        <div class="home-gallery-container">
 
-        <!-- PHOTO 1 -->
-        <div class="home-gallery-slide home-active-slide">
-            <div class="home-gallery-placeholder">
-                <span>Engineering Projects</span>
+            <!-- PHOTO 1 -->
+
+            <div class="home-gallery-slide home-active-slide">
+
+                <div class="home-gallery-placeholder">
+                    <span>Engineering Projects</span>
+                </div>
+
+                <p class="home-gallery-caption">
+                    Engineering Projects
+                </p>
+
             </div>
-            <p class="home-gallery-caption">
-                Engineering Projects
-            </p>
-        </div>
 
-        <!-- PHOTO 2 -->
-        <div class="home-gallery-slide">
-            <div class="home-gallery-placeholder">
-                <span>STEM Mentorship</span>
+
+            <!-- PHOTO 2 -->
+
+            <div class="home-gallery-slide">
+
+                <div class="home-gallery-placeholder">
+                    <span>STEM Mentorship</span>
+                </div>
+
+                <p class="home-gallery-caption">
+                    STEM Mentorship & Outreach
+                </p>
+
             </div>
-            <p class="home-gallery-caption">
-                STEM Mentorship & Outreach
-            </p>
-        </div>
 
-        <!-- PHOTO 3 -->
-        <div class="home-gallery-slide">
-            <div class="home-gallery-placeholder">
-                <span>Research & Robotics</span>
+
+            <!-- PHOTO 3 -->
+
+            <div class="home-gallery-slide">
+
+                <div class="home-gallery-placeholder">
+                    <span>Research & Robotics</span>
+                </div>
+
+                <p class="home-gallery-caption">
+                    Research & Robotics
+                </p>
+
             </div>
-            <p class="home-gallery-caption">
-                Research & Robotics
-            </p>
-        </div>
 
-        <!-- PHOTO 4 -->
-        <div class="home-gallery-slide">
-            <div class="home-gallery-placeholder">
-                <span>Team Experiences</span>
+
+            <!-- PHOTO 4 -->
+
+            <div class="home-gallery-slide">
+
+                <div class="home-gallery-placeholder">
+                    <span>Team Experiences</span>
+                </div>
+
+                <p class="home-gallery-caption">
+                    Team Experiences
+                </p>
+
             </div>
-            <p class="home-gallery-caption">
-                Team Experiences
-            </p>
-        </div>
 
-        <!-- CONTROLS -->
-        <div class="home-gallery-controls">
 
-            <button class="home-gallery-prev"
+            <!-- GALLERY CONTROLS -->
+
+            <div class="home-gallery-controls">
+
+                <button
+                    class="home-gallery-prev"
                     type="button"
                     aria-label="Previous photo">
-                &#10094;
-            </button>
+                    &#10094;
+                </button>
 
-            <span class="home-gallery-counter">
-                1 / 4
-            </span>
+                <span class="home-gallery-counter">
+                    1 / 4
+                </span>
 
-            <button class="home-gallery-next"
+                <button
+                    class="home-gallery-next"
                     type="button"
                     aria-label="Next photo">
-                &#10095;
-            </button>
+                    &#10095;
+                </button>
+
+            </div>
+
+
+            <!-- GALLERY DOTS -->
+
+            <div class="home-gallery-dots">
+
+                <button
+                    class="home-gallery-dot home-active-dot"
+                    type="button"
+                    aria-label="Show photo 1">
+                </button>
+
+                <button
+                    class="home-gallery-dot"
+                    type="button"
+                    aria-label="Show photo 2">
+                </button>
+
+                <button
+                    class="home-gallery-dot"
+                    type="button"
+                    aria-label="Show photo 3">
+                </button>
+
+                <button
+                    class="home-gallery-dot"
+                    type="button"
+                    aria-label="Show photo 4">
+                </button>
+
+            </div>
 
         </div>
 
-        <!-- DOTS -->
-        <div class="home-gallery-dots">
-            <button class="home-gallery-dot home-active-dot"
-                    type="button"
-                    aria-label="Show photo 1"></button>
+    </template>
 
-            <button class="home-gallery-dot"
-                    type="button"
-                    aria-label="Show photo 2"></button>
+    </section>
 
-            <button class="home-gallery-dot"
-                    type="button"
-                    aria-label="Show photo 3"></button>
 
-            <button class="home-gallery-dot"
-                    type="button"
-                    aria-label="Show photo 4"></button>
-        </div>
+    <!-- HOMEPAGE PHOTO GALLERY SCRIPT -->
+
+    <!--
+HOMEPAGE GALLERY JAVASCRIPT TEMPORARILY DISABLED.
+Restore the original slideshow script when the gallery is published.
+-->
+
+
+    <!-- ANIMATED ROVER -->
+
+    <div class="rover-track">
+
+        <img
+            src="images/pixor-library-sci-rover.gif"
+            alt="Animated planetary exploration rover"
+            class="homepage-rover"
+        >
 
     </div>
-
-</section>
-
-
-<script>
-
-const homeSlides = document.querySelectorAll(
-    ".home-gallery-slide"
-);
-
-const homeDots = document.querySelectorAll(
-    ".home-gallery-dot"
-);
-
-const homeCounter = document.querySelector(
-    ".home-gallery-counter"
-);
-
-let homeCurrentSlide = 0;
-
-function showHomeSlide(index) {
-
-    homeCurrentSlide =
-        (index + homeSlides.length) % homeSlides.length;
-
-    homeSlides.forEach(slide => {
-        slide.classList.remove("home-active-slide");
-    });
-
-    homeDots.forEach(dot => {
-        dot.classList.remove("home-active-dot");
-    });
-
-    homeSlides[homeCurrentSlide]
-        .classList.add("home-active-slide");
-
-    homeDots[homeCurrentSlide]
-        .classList.add("home-active-dot");
-
-    homeCounter.textContent =
-        `${homeCurrentSlide + 1} / ${homeSlides.length}`;
-}
-
-document.querySelector(".home-gallery-next")
-    .addEventListener("click", () => {
-        showHomeSlide(homeCurrentSlide + 1);
-    });
-
-document.querySelector(".home-gallery-prev")
-    .addEventListener("click", () => {
-        showHomeSlide(homeCurrentSlide - 1);
-    });
-
-homeDots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-        showHomeSlide(index);
-    });
-});
-
-/* Automatically rotate every 5 seconds */
-
-setInterval(() => {
-    showHomeSlide(homeCurrentSlide + 1);
-}, 5000);
-
-</script>
-
 
 </body>
 
