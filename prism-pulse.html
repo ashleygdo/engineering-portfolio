@@ -23,13 +23,21 @@
                 <span>ONGOING PROJECT</span>
             </div>
 
-            <h1>PRISM / PULSE</h1>
+            <h1>PRISM / PULSE
 
+            <img
+            src="images/pixor-library-rocket.gif"
+            alt="Animated pixel-art rocket"
+            class="prism-rocket"
+            >
+        </h1>
             <p class="prism-description">
                 Investigating biomedical signal
                 integrity and autonomous fault
                 management in rocket flight.
             </p>
+
+
 
         </header>
 
@@ -94,19 +102,34 @@
                 using onboard measurements.
             </p>
 
-            <div class="prism-image-card">
+<!--
+FUTURE CONTENT: PAYLOAD ARCHITECTURE DIAGRAM
 
-                <div class="prism-image-placeholder">
-                    <span>Payload Architecture Diagram</span>
-                    <small>Image Placeholder</small>
-                </div>
+<div class="prism-image-card">
 
-            </div>
+    <div class="prism-image-placeholder">
+        <span>Payload Architecture Diagram</span>
+        <small>Image Placeholder</small>
+    </div>
+
+</div>
+
+END FUTURE CONTENT
+-->
+
 
         </section>
 
 
 <!-- MY ROLE & CONTRIBUTIONS -->
+
+
+<details class="prism-accordion" id="contributions">
+
+    <summary>
+        <span class="prism-accordion-number">01</span>
+        <span>My Role & Contributions</span>
+    </summary>
 
 <section class="pulse-contributions">
 
@@ -173,8 +196,16 @@
 
 </section>
 
+</details>
 
 <!-- PULSE SYSTEM ARCHITECTURE -->
+
+<details class="prism-accordion" id="system architecture">
+
+    <summary>
+        <span class="prism-accordion-number">02</span>
+        <span>PULSE System Architecture</span>
+    </summary>
 
 <section class="pulse-architecture">
 
@@ -234,19 +265,35 @@
 
     </div>
 
-    <div class="pulse-diagram-card">
+    
+<!--
+FUTURE CONTENT: DETAILED PULSE ARCHITECTURE DIAGRAM
 
-        <div class="pulse-diagram-placeholder">
-            <span>Detailed PULSE Architecture Diagram</span>
-            <small>Image Placeholder</small>
-        </div>
+<div class="pulse-diagram-card">
 
+    <div class="pulse-diagram-placeholder">
+        <span>Detailed PULSE Architecture Diagram</span>
+        <small>Image Placeholder</small>
     </div>
+
+</div>
+
+END FUTURE CONTENT
+-->
+
 
 </section>
 
+</details>  
 
 <!-- PULSE AUTONOMOUS FDIR DEVELOPMENT -->
+
+<details class="prism-accordion" id="fdir development">
+
+    <summary>
+        <span class="prism-accordion-number">03</span>
+        <span>PULSE FDIR Development</span>
+    </summary>
 
 <section class="pulse-fdir">
 
@@ -270,55 +317,57 @@
 
 <div class="pulse-fault-panel">
 
-    <h3>Fault Scenarios Under Evaluation</h3>
+    <h3>Fault Detection Testing</h3>
 
-    <div class="pulse-fault-grid">
 
-        <!-- MISSING SAMPLES -->
-        <div class="pulse-fault-card">
-            <h4>Missing Samples</h4>
-            <p>
-                Evaluating detection of interruptions
-                or gaps in ECG sample sequences.
-            </p>
+<!-- INTERACTIVE ECG TEST VIEWER -->
 
-            <div class="pulse-fault-image">
-                <span>Missing Samples</span>
-                <small>Python Plot Placeholder</small>
-            </div>
+<div class="pulse-test-viewer">
+
+    <div class="pulse-test-tabs">
+        <button class="pulse-test-tab active" data-test="0">
+            01 Healthy ECG
+        </button>
+        <button class="pulse-test-tab" data-test="1">
+            02 Missing Samples
+        </button>
+        <button class="pulse-test-tab" data-test="2">
+            03 Signal Clipping
+        </button>
+    </div>
+
+    <div class="pulse-test-display">
+
+        <div class="pulse-test-heading">
+            <h4 id="pulse-test-title">Healthy ECG Baseline</h4>
+            <span id="pulse-test-counter">01 / 03</span>
         </div>
 
-        <!-- SIGNAL CLIPPING -->
-        <div class="pulse-fault-card">
-            <h4>Signal Clipping</h4>
-            <p>
-                Investigating signal saturation
-                and loss of waveform information.
-            </p>
+        <img
+            id="pulse-test-image"
+            src="images/pulse-healthy.png"
+            alt="Healthy synthetic ECG baseline plot"
+        >
 
-            <div class="pulse-fault-image">
-                <span>Signal Clipping</span>
-                <small>Python Plot Placeholder</small>
-            </div>
-        </div>
-
-        <!-- FLATLINE -->
-        <div class="pulse-fault-card">
-            <h4>Flatline</h4>
-            <p>
-                Evaluating detection of prolonged
-                constant-value signal behavior.
-            </p>
-
-            <div class="pulse-fault-image">
-                <span>Flatline</span>
-                <small>Python Plot Placeholder</small>
-            </div>
-        </div>
+        <p id="pulse-test-description">
+            Establishing normal ECG behavior and evaluating
+            false alerts under healthy signal conditions.
+        </p>
 
     </div>
 
+    <div class="pulse-test-controls">
+        <button id="pulse-test-prev" type="button">
+            ← Previous
+        </button>
+
+        <button id="pulse-test-next" type="button">
+            Next →
+        </button>
+    </div>
+
 </div>
+
 
 <h3 class="pulse-workflow-title">
     Development Workflow
@@ -377,8 +426,16 @@
 
 </section>
 
+</details>  
 
 <!-- PULSE HARDWARE ARCHITECTURE -->
+
+<details class="prism-accordion" id="hardware-architecture">
+
+    <summary>
+        <span class="prism-accordion-number">04</span>
+        <span>PULSE Hardware Architecture</span>
+    </summary>
 
 <section class="pulse-hardware">
 
@@ -503,8 +560,16 @@
 
 </section>
 
+</details>
 
 <!-- PROJECT PROGRESS & MILESTONES -->
+
+<details class="prism-accordion" id="project-milestones">
+
+    <summary>
+        <span class="prism-accordion-number">05</span>
+        <span>Project Progress & Milestones</span>
+    </summary>
 
 <section class="pulse-milestones">
 
@@ -618,8 +683,110 @@
 
 </section>
 
+</details>
+
+<!-- MILESTONE DELIVERABLES -->
+
+<details class="prism-accordion" id="milestone-deliverables">
+
+    <summary>
+        <span class="prism-accordion-number">06</span>
+        <span>Milestone Deliverables</span>
+    </summary>
+
+<section class="pulse-deliverables">
+
+    <p class="pulse-section-label">
+        ENGINEERING DOCUMENTATION
+    </p>
+
+    <h2>Milestone Deliverables</h2>
+
+    <p class="pulse-deliverables-intro">
+        Technical presentations, design reviews, and
+        verification documentation throughout the
+        PRISM/PULSE development lifecycle.
+    </p>
+
+    <div class="pulse-deliverables-grid">
+
+        <!-- DELIVERABLE 01: PDR -->
+
+        <article class="pulse-deliverable-card">
+
+            <div class="pulse-deliverable-header">
+
+                <span class="pulse-deliverable-number">
+                    DELIVERABLE 01
+                </span>
+
+                <span class="pulse-deliverable-status">
+                    COMPLETED
+                </span>
+
+            </div>
+
+            <h3>Preliminary Design Review</h3>
+
+            <p class="pulse-deliverable-date">
+                November 2026 | Space City Rocketry
+            </p>
+
+            <p class="pulse-deliverable-description">
+                Preliminary payload system architecture,
+                autonomous FDIR development, experimental
+                methodology, and verification planning.
+            </p>
+
+            <!-- INTERACTIVE PDR SLIDES -->
+
+            <div class="pulse-pdr-viewer">
+
+                <div class="pulse-pdr-slide">
+                    <canvas id="pdr-canvas"></canvas>
+                </div>
+
+                <div class="pulse-pdr-controls">
+
+                    <button id="pdr-prev" type="button">
+                        &#8592; Previous
+                    </button>
+
+                    <span id="pdr-counter">
+                        Loading slides...
+                    </span>
+
+                    <button id="pdr-next" type="button">
+                        Next &#8594;
+                    </button>
+
+                </div>
+
+            </div>
+
+            <p class="pulse-deliverable-credit">
+                Presented by the Space City Rocketry
+                Payload Leads, Rachel Wade and Ashley Guajardo.
+            </p>
+
+        </article>
+
+    </div>
+
+    <p class="pulse-deliverables-note">
+        Additional engineering deliverables will be
+        documented as the project progresses.
+    </p>
+
+</section>
+
+</details>
+
+<template id="future-project-gallery">
 
 <!-- PROJECT PHOTO GALLERY -->
+
+<section class="pulse-gallery" id="project-gallery">
 
 <section class="pulse-gallery">
 
@@ -691,6 +858,7 @@
 
 </section>
 
+</template>
 
 <!-- PROJECT PAGE FOOTER -->
 
@@ -709,7 +877,7 @@
 
     <div class="pulse-footer-links">
 
-        <a href="projects.html" class="pulse-footer-primary">
+        <a href="index.html#featured-projects" class="pulse-footer-primary">
             View All Projects
         </a>
 
@@ -727,10 +895,6 @@
 
 
 <script>
-
-const slides = document.querySelectorAll(
-    ".pulse-gallery-slide"
-);
 
 const dots = document.querySelectorAll(
     ".gallery-dot"
@@ -788,3 +952,213 @@ setInterval(() => {
 
 </body>
 </html>
+
+
+<script type="module">
+
+import * as pdfjsLib from
+"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+"https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs";
+
+const pdfPath = "prism-payload-pdr.pdf";
+
+const canvas = document.getElementById("pdr-canvas");
+const context = canvas.getContext("2d");
+
+const prevButton = document.getElementById("pdr-prev");
+const nextButton = document.getElementById("pdr-next");
+const counter = document.getElementById("pdr-counter");
+
+let pdfDocument = null;
+let currentPage = 1;
+let rendering = false;
+let pendingPage = null;
+
+async function renderPage(pageNumber) {
+
+    if (rendering) {
+        pendingPage = pageNumber;
+        return;
+    }
+
+    rendering = true;
+
+    try {
+        const page = await pdfDocument.getPage(pageNumber);
+
+        const containerWidth =
+            canvas.parentElement.clientWidth;
+
+        const originalViewport =
+            page.getViewport({ scale: 1 });
+
+        const scale =
+            containerWidth / originalViewport.width;
+
+        const viewport =
+            page.getViewport({ scale });
+
+        const pixelRatio =
+            window.devicePixelRatio || 1;
+
+        canvas.width =
+            Math.floor(viewport.width * pixelRatio);
+
+        canvas.height =
+            Math.floor(viewport.height * pixelRatio);
+
+        canvas.style.width = viewport.width + "px";
+        canvas.style.height = viewport.height + "px";
+
+        context.setTransform(
+            pixelRatio, 0, 0, pixelRatio, 0, 0
+        );
+
+        await page.render({
+            canvasContext: context,
+            viewport: viewport
+        }).promise;
+
+        currentPage = pageNumber;
+
+        counter.textContent =
+            `Slide ${currentPage} of ${pdfDocument.numPages}`;
+
+        prevButton.disabled = currentPage === 1;
+
+        nextButton.disabled =
+            currentPage === pdfDocument.numPages;
+
+    } catch (error) {
+        console.error("Unable to render PDR slide:", error);
+        counter.textContent = "Unable to display slide";
+    } finally {
+        rendering = false;
+
+        if (pendingPage !== null) {
+            const nextPage = pendingPage;
+            pendingPage = null;
+            renderPage(nextPage);
+        }
+    }
+}
+
+prevButton.addEventListener("click", () => {
+    if (currentPage > 1) {
+        renderPage(currentPage - 1);
+    }
+});
+
+nextButton.addEventListener("click", () => {
+    if (currentPage < pdfDocument.numPages) {
+        renderPage(currentPage + 1);
+    }
+});
+
+async function initializePDR() {
+
+
+window.addEventListener("resize", () => {
+    if (pdfDocument && !rendering) {
+        renderPage(currentPage);
+    }
+});
+
+
+    try {
+        pdfDocument = await pdfjsLib.getDocument(pdfPath).promise;
+        await renderPage(1);
+    } catch (error) {
+        console.error("Unable to load PDR PDF:", error);
+        counter.textContent = "Presentation unavailable";
+        prevButton.disabled = true;
+        nextButton.disabled = true;
+    }
+}
+
+initializePDR();
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const tests = [
+        {
+            title: "Healthy ECG Baseline",
+            image: "images/pulse-healthy.png",
+            alt: "Healthy synthetic ECG baseline",
+            description:
+                "Establishing normal ECG behavior and evaluating false alerts under healthy signal conditions."
+        },
+        {
+            title: "Missing Samples",
+            image: "images/pulse-missing-samples.png",
+            alt: "Synthetic ECG missing-sample test",
+            description:
+                "Evaluating PULSE's ability to identify missing ECG samples and interruptions in the acquired signal."
+        },
+        {
+            title: "Signal Clipping",
+            image: "images/pulse-clipping.png",
+            alt: "Synthetic ECG clipping test",
+            description:
+                "Evaluating waveform saturation and identifying corrupted ECG samples using Python-based fault detection."
+        }
+    ];
+
+    const image = document.getElementById("pulse-test-image");
+    const title = document.getElementById("pulse-test-title");
+    const description = document.getElementById("pulse-test-description");
+    const counter = document.getElementById("pulse-test-counter");
+    const previous = document.getElementById("pulse-test-prev");
+    const next = document.getElementById("pulse-test-next");
+    const tabs = document.querySelectorAll(".pulse-test-tab");
+
+    if (!image || !title || !description ||
+        !counter || !previous || !next) return;
+
+    let currentTest = 0;
+
+    function showTest(index) {
+        currentTest = index;
+        const test = tests[index];
+
+        title.textContent = test.title;
+        image.src = test.image;
+        image.alt = test.alt;
+        description.textContent = test.description;
+
+        counter.textContent =
+            String(index + 1).padStart(2, "0") + " / 03";
+
+        tabs.forEach((tab, i) => {
+            tab.classList.toggle("active", i === index);
+            tab.setAttribute("aria-pressed", i === index);
+        });
+
+        previous.disabled = index === 0;
+        next.disabled = index === tests.length - 1;
+    }
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => showTest(index));
+    });
+
+    previous.addEventListener("click", () => {
+        if (currentTest > 0) showTest(currentTest - 1);
+    });
+
+    next.addEventListener("click", () => {
+        if (currentTest < tests.length - 1) {
+            showTest(currentTest + 1);
+        }
+    });
+
+    showTest(0);
+
+});
+</script>
